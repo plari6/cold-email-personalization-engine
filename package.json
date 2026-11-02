@@ -1,0 +1,37 @@
+{
+  "name": "cold-email-personalization-engine",
+  "version": "1.0.0",
+  "description": "Node.js CLI that reads prospect websites from a CSV and writes a custom 2-sentence cold email icebreaker for each one with Gemini.",
+  "main": "src/index.js",
+  "bin": {
+    "cold-email-engine": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "personalize": "node src/index.js",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "cold-email",
+    "personalization",
+    "icebreaker",
+    "gemini",
+    "csv",
+    "lead-generation",
+    "outreach",
+    "sales"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@google/genai": "^2.32.0",
+    "cheerio": "^1.2.0",
+    "csv-parser": "^3.2.1",
+    "dotenv": "^18.0.9",
+    "exceljs": "^4.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
